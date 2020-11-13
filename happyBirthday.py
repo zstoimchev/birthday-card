@@ -7,7 +7,7 @@ from pathlib import Path
 import time as tkm
 from unittest import result
 
-video_name = str(Path().absolute()) + '\\video.mp4'
+video_name = str(Path().absolute()) + '\\exampleVideo.mp4'
 video = imageio.get_reader(video_name)
 delay = int(1000 / video.get_meta_data()['fps'])
 def stream(label):
@@ -87,7 +87,7 @@ root.title("Birthday_Card")
 label1=tk.Label(root, text="Start Birthday Song: ", fg='green', anchor="w")
 label1.grid(row=0, column=0)
 
-file = 'HBD.wav'
+file = 'HBDsong.wav'
 mixer.init()
 mixer.music.load(file)
 
@@ -126,7 +126,7 @@ format.grid(row=3, column=0, sticky='W')
 prazno = tk.Label(root, text="Click here to check-->")
 prazno.grid(row=4, columnspan=3)
 
-img = ImageTk.PhotoImage(Image.open("teest.jpg"))
+img = ImageTk.PhotoImage(Image.open("b-daytoday.jpg"))
 
 button=tk.Button(root, text="Calculate", image=img, command=CheckAge)
 button.grid(row=1, columnspan=5, rowspan=4, sticky='E')
