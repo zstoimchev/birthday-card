@@ -73,7 +73,7 @@ def CheckAge():
         l5.grid(row=4, column=5)
 
     #if __name__ == '__main__':
-    if (imee == "Zoran" or imee == "zoran" or imee == "Zoki" or imee == "zoki") and today == nextBirthday:
+    if (imee == "Zhivko" or imee == "zivko" or imee == "Zhiki" or imee == "zhiki" or imee == "zike") and today == nextBirthday:
         my_label = tk.Label(root, width=490, heigh=280)
         my_label.grid(row=5, column=0, columnspan=6)
         my_label.after(delay, lambda: stream(my_label))
